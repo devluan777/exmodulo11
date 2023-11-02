@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 55px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin-top: 32px;
+}
+
+li {
+    margin-right: 20px;
+}
+
+li a {
+    color: #fff;
+}
+
+.about {
+    display: flex;
+    margin: 20px;
+    margin-bottom: 20px; 
+    margin-left: 20px;
+}
+
+.about-image {
+    flex: 1;
+    margin: 15px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+#titulo-produtos {
+    margin-left: 30px;
+}
+
+.product {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart {
+    margin: 20px;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .about {
+        display: block;
+        margin: 20px;
+        max-width: 90%;
+    }
+
+    header {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .about-image img {
+        max-width: 90%;
+    }
+    header ul {
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px;
+    }
+    section p, h2 {
+        text-align: center;
+    }
+
+    .product {
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .products {
+        display: block;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .add-to-cart {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5px auto;
+    }
+    
+
+    .cart {
+        margin: 12px;
+    }
+
+    #cart-items {
+        margin-left: 30px;
+    }
+
+    .footer-info p {
+        text-align: center;
+    }
+
+    .footer-social img {
+        max-width: 20px;
+        display: block;
+        display: inline;
+    }
+}
+
+
+    @media screen and (min-width : 768px) and (max-width: 1023px) {
+        .about {
+            display: block;
+        }
+        .about-text{
+            display: block;
+            text-align: center;
+            max-width: 100%;
+            
+        }
+
+        .product img, .products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px; 
+            align-items: center;
+            text-align: center; 
+            
+            
+        }
+        .product img {
+        width: 100%;
+        }
+        #titulo-produtos , .cart {
+            text-align: center;
+        }
+
+
+
+        .cart ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            margin: 0;
+        }
+
+        .card ul img {
+            width:100% ; 
+        }
+        
+
+
+}
+
+.about-image {
+    flex: 1;
+    margin: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    height: auto;
+}
+
+
+#cart-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    overflow-x: auto; 
+}
+
+#cart-items li {
+    margin-right: 20px;
+    display: inline;
+}
+
+#cart-items img {
+    max-width: 250px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-social {
+    text-align: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-info p {
+    margin: 5px;
+}
+
+.footer-social a {
+    display: inline;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer-social img {
+    width: 32px;
+} 
